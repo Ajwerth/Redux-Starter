@@ -27,7 +27,6 @@ const DynamicTable = props => {
         <thead>
           <tr>
             {children}
-            <th className="deleteHeader" />
           </tr>
         </thead>
         <tbody>

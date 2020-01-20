@@ -14,6 +14,7 @@ const DashboardContainer = styled.section`
     margin-bottom: 10px;
     padding: 5px 5px 5px 0;
     border-bottom: 1px solid #ccc;
+    align-self: flex-start;
   }
 
   .meta {
@@ -54,7 +55,6 @@ const Ships = props => {
       <DynamicTable data={ships} isLoading={isLoading}>
         <th className="deleteHeader">#</th>
         <th className="deleteHeader">Name</th>
-        <th className="deleteHeader" />
       </DynamicTable>
     </DashboardContainer>
   );
