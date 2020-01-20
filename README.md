@@ -1,2 +1,2 @@
 # Redux Starter
-Redux starter is a starter template with a basic redux setup. 
+Redux Starter is a simple app with a basic Redux Boilerplate, it uses the Star Wars api [swapi](https://swapi.co/) as an example.
