@@ -1,11 +1,11 @@
 import React from "react";
-import BookIndex from "./components/BookIndex";
+import ShipIndex from "./components/ShipIndex";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="App">
-      <BookIndex />
+      <ShipIndex />
     </div>
   );
 }

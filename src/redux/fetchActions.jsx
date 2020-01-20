@@ -8,12 +8,11 @@ export const fetchConstants = {
 };
 
 // API url and endpoint
-const apiUrl = "https://the-one-api.herokuapp.com/v1/books";
+const apiUrl = "https://swapi.co/api/starships";
 
 //Fetch Pipeline
 export const fetch = authorization => {
   return dispatch => {
-    dispatch(fetch(apiUrl));
     axios
       .get(apiUrl)
       .then(response => dispatch(fetchSuccess(response.data, apiUrl)))

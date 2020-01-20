@@ -6,9 +6,9 @@ const Row = props => {
 
   const Row = data.map(item => {
     return (
-      <Fragment key={item.id.toString()}>
+      <Fragment key={item.MGLT.toString()}>
         <tr>
-          <td>{item.id.toString()}</td>
+          <td>{item.MGLT.toString()}</td>
           <td>{item.name}</td>
         </tr>
       </Fragment>

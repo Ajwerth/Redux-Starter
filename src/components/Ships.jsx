@@ -43,15 +43,15 @@ const DashboardContainer = styled.section`
   }
 `;
 
-const Books = props => {
-  const { books, isLoading } = props;
+const Ships = props => {
+  const { ships, isLoading } = props;
 
-  if (books === undefined) return null;
+  if (ships === undefined) return null;
 
   return (
     <DashboardContainer>
-      <h3>Pipeline Index</h3>
-      <DynamicTable data={books} isLoading={isLoading}>
+      <h3>Ship Index</h3>
+      <DynamicTable data={ships} isLoading={isLoading}>
         <th className="deleteHeader">#</th>
         <th className="deleteHeader">Name</th>
         <th className="deleteHeader" />
@@ -60,10 +60,10 @@ const Books = props => {
   );
 };
 
-export default Books;
+export default Ships;
 
-Books.propTypes = {
-  book: shape({
+Ships.propTypes = {
+  ship: shape({
     name: string.isRequired
   })
 };
