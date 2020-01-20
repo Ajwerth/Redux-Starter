@@ -11,7 +11,7 @@ export const fetchConstants = {
 const apiUrl = "https://swapi.co/api/starships";
 
 //Fetch Pipeline
-export const fetch = authorization => {
+export const fetch = () => {
   return dispatch => {
     axios
       .get(apiUrl)

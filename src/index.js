@@ -1,10 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import "./styles.css";
-import App from "./App.js";
-import store from "./redux/store";
-import { saveState } from "./redux/store";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.css';
+
+import './styles.css';
+import App from './App';
+import store from './redux/store';
+import { saveState } from './redux/store';
 
 store.subscribe(() => {
   saveState(store.getState());
