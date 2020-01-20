@@ -23,7 +23,7 @@ export const fetchReducer = (state = INITIAL_STATE, action) => {
         isLoading: false,
         fetched: true,
         didInvalidate: false,
-        pipelines: action.payload,
+        ships: action.payload,
         apiUrl: action.apiUrl
       });
     case FETCH_FAILURE:
@@ -39,4 +39,4 @@ export const fetchReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export const dataReducer = fetchReducer;
+export default fetchReducer;

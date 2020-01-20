@@ -19,16 +19,14 @@ const TableContainer = styled.div`
 `;
 
 const DynamicTable = props => {
-  const { data } = props;
-
-  const RowHeaders = headers.map(header => <th key={header}>{header}</th>);
+  const { data, children } = props;
 
   return (
     <TableContainer>
       <Table bordered striped hover responsive size="sm">
         <thead>
           <tr>
-            {RowHeaders}
+            {children}
             <th className="deleteHeader" />
           </tr>
         </thead>

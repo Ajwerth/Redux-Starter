@@ -7,7 +7,7 @@ import { fetch } from "../redux/fetchActions";
 // Dispatch Imports
 
 // Data container for the pipelines component, handles data for the pipelines component
-export const BookData = WrappedComponent => {
+export const ShipData = WrappedComponent => {
   return class extends Component {
     componentDidMount() {
       const { fetch } = this.props;
@@ -21,23 +21,25 @@ export const BookData = WrappedComponent => {
 };
 
 const mapStateToProps = state => {
-  return {};
+  return {
+    ships: state.fetchReducer.ships.results
+  };
 };
 
 const mapDispatchToProps = {
   fetch
 };
 
-const composedBooks = compose(
+const composedShipData = compose(
   connect(
     mapStateToProps,
     mapDispatchToProps
   ),
-  BookData
+  ShipData
 );
 
-export default composedBooks;
+export default composedShipData;
 
-BookData.propTypes = {
+ShipData.propTypes = {
   dispatch: func.isRequired
 };
